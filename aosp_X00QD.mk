@@ -22,8 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit some common aosp stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some AEX stuff.
+
+$(call inherit-product, vendor/aosp/common.mk)
+
 
 # Inherit from X00QD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
