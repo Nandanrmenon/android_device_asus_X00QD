@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Inherit some AEX stuff.
 
-$(call inherit-product, vendor/pa/common.mk)
+$(call inherit-product, vendor/pa/config/common_full_phone.mk)
 
 
 # Inherit from X00QD device
